@@ -1,0 +1,11 @@
+body {
+    background-color: rgb(105, 255, 182);
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+}
