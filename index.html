@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <title>SpendSense</title>
-    </head>
-
+<head>
+  <meta charset="UTF-8">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
+  <h1>SpendSense</h1>
+  <h2>Your Financial Overview</h2>
 
-    <h1> SpendSense</h1>
-    <h2>Your Financial Overview</h2>
+  <!-- Add Expense Form -->
+  <form id="expense-form">
+    <input type="date" id="date" required>
+    <input type="number" id="amount" placeholder="Amount" required>
+    <input type="text" id="category" placeholder="Category" required>
+    <input type="text" id="description" placeholder="Description">
+    <button type="submit">Add Expense</button>
+  </form>
 
+  <!-- Expense Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Amount</th>
+        <th>Category</th>
+        <th>Description</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="expense-list">
+      <!-- Expenses will appear here -->
+    </tbody>
+  </table>
 
-
-
+  <script src="script.js"></script>
 </body>
-
-
-
-
-
-
-
-
-
 </html>
